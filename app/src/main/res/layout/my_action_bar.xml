@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginLeft="-15dp">
+    <ImageButton android:src="@drawable/burger"
+        android:background="?attr/actionBarItemBackground"
+        android:layout_width="?attr/actionBarSize"
+        android:layout_height="match_parent"
+        android:scaleType="centerInside"
+        android:id="@+id/item1"
+        android:layout_marginLeft="-15dp"
+        android:paddingRight="-15dp"
+        android:paddingTop="11dp"
+        android:paddingBottom="11dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+
+        />
+    <Spinner
+        android:layout_width="?attr/actionBarSize"
+        android:layout_height="match_parent"
+        android:spinnerMode="dropdown"
+        android:id="@+id/leftmenu"
+        android:visibility="invisible"
+        android:entries="@array/planets"
+        >
+
+        </Spinner>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Найти тусовки"
+        android:textSize="18dp"
+        android:layout_marginLeft="18dp"
+        android:textColor="@color/white"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/item1"
+        android:layout_toEndOf="@+id/item1" />
+
+
+</RelativeLayout>

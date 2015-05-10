@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <item name="red" type="color">#f44336</item>
+    <item name="white" type="color">#ffffff</item>
+    <item name="background" type="color">#f0f0f0</item>
+    <item name="grey" type="color">#c8c8c8</item>
+    <item name="active_grey" type="color">#969696</item>
+    <item name="blue" type="color">#3f51b5</item>
+    <color name="transparent">#00000000</color>
+    <color name="tab_highlight">#ff9ecfbf</color>
+  
+</resources> 
