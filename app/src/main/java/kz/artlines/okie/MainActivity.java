@@ -95,7 +95,7 @@ public class MainActivity extends ActionBarActivity implements ActionBar.TabList
                             startActivity(new Intent(MainActivity.this, Chat.class));
                         }
                         if (position==4){
-                            startActivity(new Intent(MainActivity.this, CreateTus.class));
+                            startActivity(new Intent(MainActivity.this, Profile.class));
                         }
                     }
 
@@ -143,7 +143,7 @@ public class MainActivity extends ActionBarActivity implements ActionBar.TabList
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_main, menu);
+        getMenuInflater().inflate(R.menu.very_main, menu);
         return true;
     }
 
@@ -156,8 +156,13 @@ public class MainActivity extends ActionBarActivity implements ActionBar.TabList
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
+            startActivity(new Intent(this,ChangeProfile.class));
+            return true;
+        }else if(id==R.id.change_pass){
+            startActivity(new Intent(this,ChangePassword.class));
             return true;
         }
+
 
         return super.onOptionsItemSelected(item);
     }

@@ -1,6 +1,9 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools" tools:context="kz.artlines.okie.MainActivity">
+    <item android:id="@+id/map" android:title=""
+        android:icon="@drawable/compass"
+        android:orderInCategory="100" app:showAsAction="always" />
     <item android:id="@+id/action_settings" android:title="Изменить профиль"
         android:orderInCategory="100" app:showAsAction="never" />
     <item android:id="@+id/change_pass" android:title="Изменить пароль"

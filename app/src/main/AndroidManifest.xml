@@ -38,6 +38,18 @@
             android:name=".Chat"
             android:label="@string/title_activity_chat" >
         </activity>
+        <activity
+            android:name=".Profile"
+            android:label="@string/title_activity_profile" >
+        </activity>
+        <activity
+            android:name=".ChangeProfile"
+            android:label="@string/title_activity_change_profile" >
+        </activity>
+        <activity
+            android:name=".ChangePassword"
+            android:label="@string/title_activity_change_password" >
+        </activity>
     </application>
 
 </manifest>

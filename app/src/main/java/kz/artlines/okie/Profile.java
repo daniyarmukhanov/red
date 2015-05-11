@@ -14,12 +14,12 @@ import android.widget.Spinner;
 import android.widget.TextView;
 
 
-public class CreateTus extends ActionBarActivity {
-    Spinner spinner;
+public class Profile extends ActionBarActivity {
+Spinner spinner;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_create_tus);
+        setContentView(R.layout.activity_profile);
         // Set up the action bar.
         final ActionBar actionBar = getSupportActionBar();
         actionBar.setDisplayShowTitleEnabled(false);
@@ -30,7 +30,7 @@ public class CreateTus extends ActionBarActivity {
         final View customView = li.inflate(R.layout.my_action_bar, null);
         ImageButton leftmenu= (ImageButton) customView.findViewById(R.id.item1);
         TextView title=(TextView)customView.findViewById(R.id.title);
-        title.setText("Создать тусовку");
+        title.setText("Профиль");
         spinner=(Spinner)customView.findViewById(R.id.leftmenu);
         leftmenu.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -44,16 +44,16 @@ public class CreateTus extends ActionBarActivity {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                 if (position==1){
-                    startActivity(new Intent(CreateTus.this, CreateTus.class));
+                    startActivity(new Intent(Profile.this, CreateTus.class));
                 }
                 if (position==2){
-                    startActivity(new Intent(CreateTus.this, MainActivity.class));
+                    startActivity(new Intent(Profile.this, MainActivity.class));
                 }
                 if (position==3){
-                    startActivity(new Intent(CreateTus.this, Chat.class));
+                    startActivity(new Intent(Profile.this, Chat.class));
                 }
                 if (position==4){
-                    startActivity(new Intent(CreateTus.this, Profile.class));
+                    startActivity(new Intent(Profile.this, Profile.class));
                 }
             }
 
