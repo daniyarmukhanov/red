@@ -12,7 +12,7 @@
     <string name="title_activity_main">MainActivity</string>
 
     <string-array name="planets">
-        <item> </item>
+        <item></item>
         <item>Создать тусовку</item>
         <item>Найти тусовки</item>
         <item>Чаты</item>
@@ -20,5 +20,6 @@
     </string-array>
 
     <string name="title_activity_create_tus">CreateTus</string>
+    <string name="title_activity_chat">Chat</string>
 
 </resources>

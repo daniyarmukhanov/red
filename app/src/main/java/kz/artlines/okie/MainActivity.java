@@ -88,6 +88,15 @@ public class MainActivity extends ActionBarActivity implements ActionBar.TabList
                         if (position==1){
                             startActivity(new Intent(MainActivity.this, CreateTus.class));
                         }
+                        if (position==2){
+                            startActivity(new Intent(MainActivity.this, MainActivity.class));
+                        }
+                        if (position==3){
+                            startActivity(new Intent(MainActivity.this, Chat.class));
+                        }
+                        if (position==4){
+                            startActivity(new Intent(MainActivity.this, CreateTus.class));
+                        }
                     }
 
                     @Override

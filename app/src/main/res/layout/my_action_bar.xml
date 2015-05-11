@@ -32,6 +32,7 @@
         android:layout_height="wrap_content"
         android:text="Найти тусовки"
         android:textSize="18dp"
+        android:id="@+id/title"
         android:layout_marginLeft="18dp"
         android:textColor="@color/white"
         android:layout_centerVertical="true"

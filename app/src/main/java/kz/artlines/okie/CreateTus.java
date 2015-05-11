@@ -1,24 +1,67 @@
 package kz.artlines.okie;
 
+import android.content.Intent;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ImageButton;
+import android.widget.Spinner;
+import android.widget.TextView;
 
 
 public class CreateTus extends ActionBarActivity {
-
+    Spinner spinner;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_create_tus);
+        final ActionBar actionBar = getSupportActionBar();
+        actionBar.setDisplayShowTitleEnabled(false);
+        actionBar.setDisplayShowHomeEnabled(false);
+
+        actionBar.setDisplayShowCustomEnabled(true);
+        LayoutInflater li = LayoutInflater.from(this);
+        final View customView = li.inflate(R.layout.my_action_bar, null);
+        ImageButton leftmenu= (ImageButton) customView.findViewById(R.id.item1);
+        TextView title=(TextView)customView.findViewById(R.id.title);
+        title.setText("Чаты");
+        spinner=(Spinner)customView.findViewById(R.id.leftmenu);
+        leftmenu.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                spinner.performClick();
+
+            }
+        });
+
+        spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                if (position==1){
+                    startActivity(new Intent(CreateTus.this, CreateTus.class));
+                }
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+
+            }
+        });
+
+
+        actionBar.setCustomView(customView);
     }
 
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_create_tus, menu);
+        getMenuInflater().inflate(R.menu.menu_main, menu);
         return true;
     }
 
