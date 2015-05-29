@@ -1,12 +1,67 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
-    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    android:paddingBottom="@dimen/activity_vertical_margin"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context="kz.artlines.okie.Profile">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/red"
+    android:orientation="vertical"
+    >
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/ava"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Катерина 23 года"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_horizontal"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Провела 11 тусовок"
+        android:textColor="@color/white"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:textSize="14dp"
+        android:layout_gravity="center_horizontal"/>
 
-    <TextView android:text="ПРОФАЙЛ" android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="-10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/active_grey"
+            android:textSize="22dp"
+            android:text="МОИ ТУСОВКИ"
+            android:paddingLeft="20dp"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"/>
+        </LinearLayout>
+    <ListView
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:dividerHeight="0dp"
+        android:divider="@null"
+        android:layout_margin="10dp"
+        android:layout_height="match_parent"
+        android:id="@+id/list">
 
-</RelativeLayout>
+        </ListView>
+
+</LinearLayout>
